@@ -1,0 +1,160 @@
+.hero {
+  /* Visual */
+  background-color: var(--accent-gray);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-title {
+  color: var(--bg-text-secondary);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  max-width: 496px;
+
+  /* Box model */
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.order-service-btn {
+  /* Box model */
+  display: block;
+  padding: 16px 32px;
+  min-width: 169px;
+  margin: 0 auto;
+
+  /* Typography */
+  color: var(--bg-text-secondary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  /* Visual */
+  background-color: var(--element-primary);
+  border-radius: 4px;
+  border: none;
+
+  /* Transition */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-service-btn:hover,
+.order-service-btn:focus,
+.order-service-btn:active {
+  background-color: var(--pressed);
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    /* Box model */
+    padding: 72px 0;
+    max-width: 320px;
+    margin: 0 auto;
+
+    /* Visual */
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('./images/hero/mob-office.jpg');
+  }
+
+  .main-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+
+    /* Box model */
+    max-width: 166px;
+    margin-bottom: 72px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    /* Box model */
+    padding: 112px 0;
+    max-width: 768px;
+    margin: 0 auto;
+
+    /* Visual */
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('./images/hero/tablet-office.jpg');
+  }
+  .main-title {
+    /* Box model */
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    /* Box model */
+    padding: 188px 0;
+    max-width: 1440px;
+
+    /* Visual */
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('./images/hero/office.jpg');
+  }
+
+  .main-title {
+    /* Box model */
+    margin-bottom: 48px;
+  }
+}
+
+/* ================ BACKGROUND IMAGE X2 ================ */
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .title-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('./images/hero/mob-office@2x.jpg');
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .title-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('./images/hero/tablet-office@2x.jpg');
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+  .title-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('./images/hero/office@2x.jpg');
+  }
+}
+/* ================ /BACKGROUND IMAGE X2 ================ */

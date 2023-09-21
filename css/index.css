@@ -1,0 +1,17 @@
+/* UTILS */
+@import './utils/visually-hidden.css';
+@import './utils/variables.css';
+
+/* BASE */
+@import './base/common.css';
+@import './base/container.css';
+@import './base/section.css';
+
+/* LAYOUT */
+@import './layout/header.css';
+@import './layout/hero.css';
+@import './layout/benefits.css';
+@import './layout/team.css';
+@import './layout/portfolio.css';
+@import './layout/footer.css';
+@import './layout/pop-ups.css';

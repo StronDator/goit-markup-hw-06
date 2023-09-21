@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <!--PAGE HEADER-->
@@ -38,7 +38,18 @@
             </li>
           </ul>
         </nav>
-
+        <div class="open-mobile-menu">
+          <button class="open-mobile-menu-btn" type="button">
+            <svg
+              class="open-mobile-menu-icon"
+              width="24"
+              height="24"
+              aria-label="mobile menu open icon"
+            >
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </div>
         <address class="address">
           <ul class="contacts-list list">
             <li class="contacts-item">
@@ -73,7 +84,7 @@
           <h2 class="visually-hidden">Benefits</h2>
           <ul class="benefits-list list">
             <li class="benefits-list-item">
-              <div class="benefits-icon-container">
+              <div class="benefits-icon-container benefits-icon">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -85,7 +96,7 @@
               </p>
             </li>
             <li class="benefits-list-item">
-              <div class="benefits-icon-container">
+              <div class="benefits-icon-container benefits-icon">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -97,7 +108,7 @@
               </p>
             </li>
             <li class="benefits-list-item">
-              <div class="benefits-icon-container">
+              <div class="benefits-icon-container benefits-icon">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -109,7 +120,7 @@
               </p>
             </li>
             <li class="benefits-list-item">
-              <div class="benefits-icon-container">
+              <div class="benefits-icon-container benefits-icon">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -126,12 +137,13 @@
 
       <!-- OUR TEAM SECTION -->
       <section class="team">
-        <div class="container">
+        <div class="team-container container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-list-item">
               <img
                 class="team-list-img"
+                srcset="./images/photo/Mark@2x.jpg 2x"
                 src="./images/photo/Mark.jpg"
                 alt="photo Mark Guerrero"
                 width="264"
@@ -196,6 +208,7 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
+                srcset="./images/photo/Tom@2x.jpg 2x"
                 src="./images/photo/Tom.jpg"
                 alt="photo Tom Ford"
                 width="264"
@@ -259,6 +272,7 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
+                srcset="/images/photo/Camila@2x.jpg 2x"
                 src="./images/photo/Camila.jpg"
                 alt="photo Camilla Garcia"
                 width="264"
@@ -322,6 +336,7 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
+                srcset="/images/photo/Daniel@2x.jpg 2x"
                 src="./images/photo/Daniel.jpg"
                 alt="photo Daniel Wilson"
                 width="264"
@@ -395,6 +410,14 @@
               <div class="portfolio-img">
                 <img
                   class="portfolio-list-img"
+                  srcset="
+                    ./images/Projects/Banking.jpg           360w,
+                    ./images/Projects/banking@2x.jpg        720w,
+                    ./images/Projects/tablet-banking.jpg    356w,
+                    ./images/Projects/tablet-banking@2x.jpg 712w,
+                    ./images/Projects/mob-banking.jpg       288w,
+                    ./images/Projects/mob-banking@2x.jpg    576w
+                  "
                   src="./images/Projects/Banking.jpg"
                   alt="photo Banking App"
                   width="360"
@@ -415,6 +438,14 @@
               <div class="portfolio-img">
                 <img
                   class="portfolio-list-img"
+                  srcset="
+                    ./images/Projects/Cashless.jpg           360w,
+                    ./images/Projects/Cashless@2x.jpg        720w,
+                    ./images/Projects/tablet-Cashless.jpg    356w,
+                    ./images/Projects/tablet-Cashless@2x.jpg 712w,
+                    ./images/Projects/mob-Cashless.jpg       288w,
+                    ./images/Projects/mob-Cashless@2x.jpg    576w
+                  "
                   src="./images/Projects/Cashless.jpg"
                   alt="photo Cashless Payment"
                   width="360"
@@ -435,6 +466,14 @@
               <div class="portfolio-img">
                 <img
                   class="portfolio-list-img"
+                  srcset="
+                    ./images/Projects/Meditation.jpg           360w,
+                    ./images/Projects/Meditation@2x.jpg        720w,
+                    ./images/Projects/tablet-Meditation.jpg    356w,
+                    ./images/Projects/tablet-Meditation@2x.jpg 712w,
+                    ./images/Projects/mob-Meditation.jpg       288w,
+                    ./images/Projects/mob-Meditation@2x.jpg    576w
+                  "
                   src="./images/Projects/Meditation.jpg"
                   alt="photo Meditation App"
                   width="360"
@@ -455,6 +494,14 @@
               <div class="portfolio-img">
                 <img
                   class="portfolio-list-img"
+                  srcset="
+                    ./images/Projects/Taxi.jpg           360w,
+                    ./images/Projects/Taxi@2x.jpg        720w,
+                    ./images/Projects/tablet-Taxi.jpg    356w,
+                    ./images/Projects/tablet-Taxi@2x.jpg 712w,
+                    ./images/Projects/mob-Taxi.jpg       288w,
+                    ./images/Projects/mob-Taxi@2x.jpg    576w
+                  "
                   src="./images/Projects/Taxi.jpg"
                   alt="photo Taxi Service"
                   width="360"
@@ -475,6 +522,14 @@
               <div class="portfolio-img">
                 <img
                   class="portfolio-list-img"
+                  srcset="
+                    ./images/Projects/Screen.jpg           360w,
+                    ./images/Projects/Screen@2x.jpg        720w,
+                    ./images/Projects/tablet-Screen.jpg    356w,
+                    ./images/Projects/tablet-Screen@2x.jpg 712w,
+                    ./images/Projects/mob-Screen.jpg       288w,
+                    ./images/Projects/mob-Screen@2x.jpg    576w
+                  "
                   src="./images/Projects/Screen.jpg"
                   alt="photo Screen Illustrations"
                   width="360"
@@ -495,6 +550,14 @@
               <div class="portfolio-img">
                 <img
                   class="portfolio-list-img"
+                  srcset="
+                    ./images/Projects/Courses.jpg           360w,
+                    ./images/Projects/Courses@2x.jpg        720w,
+                    ./images/Projects/tablet-Courses.jpg    356w,
+                    ./images/Projects/tablet-Courses@2x.jpg 712w,
+                    ./images/Projects/mob-Courses.jpg       288w,
+                    ./images/Projects/mob-Courses@2x.jpg    576w
+                  "
                   src="./images/Projects/Courses.jpg"
                   alt="photo Online Courses"
                   width="360"
@@ -729,6 +792,111 @@
           </div>
           <button class="review-form-submit" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+      <button class="close-btn">
+        <svg
+          class="mobile-menu-close-icon"
+          width="8"
+          height="8"
+          aria-label="mobile menu close icon"
+        >
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav c>
+        <ul class="menu list">
+          <li class="mobile-menu-item">
+            <a
+              class="section-title mobile-menu-link mobile-studio-link link"
+              href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li class="mobile-menu-item">
+            <a class="section-title mobile-menu-link mobile-studio-link" href=""
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-menu-item">
+            <a class="section-title mobile-menu-link mobile-studio-link" href=""
+              >Contacts</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-contacts-menu">
+        <address class="mobile-contact">
+          <ul class="contacts-list list">
+            <li class="contacts-item">
+              <a
+                class="contacts-list-link mobile-menu-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a
+                class="contacts-list-link mobile-menu-link link"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="social-list list">
+          <li class="social-list-item">
+            <a href="" class="social-team-link social-link link">
+              <svg
+                class="social-icon"
+                width="16"
+                height="16"
+                aria-label="instagram icon"
+              >
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="" class="social-team-link social-link link">
+              <svg
+                class="social-icon"
+                width="16"
+                height="16"
+                aria-label="twitter icon"
+              >
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="" class="social-team-link social-link link">
+              <svg
+                class="social-icon"
+                width="16"
+                height="16"
+                aria-label="facebook icon"
+              >
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="" class="social-team-link social-link link">
+              <svg
+                class="social-icon"
+                width="16"
+                height="16"
+                aria-label="linkedIn icon"
+              >
+                <use href="./images/icons.svg#icon-linkedIn"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>

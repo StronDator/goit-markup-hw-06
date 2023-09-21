@@ -1,0 +1,13 @@
+:root {
+  --pressed: #404bbf;
+  --text-primary: #434455;
+  --bg-cloud: #f4f4fd;
+  --accent-gray: #2e2f42;
+  --bg-text-secondary: #fff;
+  --bg-eclipse: rgba(46, 47, 66, 0.7);
+  --element-primary: #4d5ae5;
+  --bg-cornflower: #e7e9fc;
+  --bg-lightslate: #8e8f99;
+  --green-accent: #31d0aa;
+  --bg-form: #fcfcfc;
+}

@@ -1,0 +1,28 @@
+.section-title {
+  /* Box model */
+  margin-bottom: 72px;
+  /* Typography */
+  color: var(--accent-gray);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.hero,
+.benefits,
+.team,
+.portfolio {
+  padding: 96px 0;
+}
+
+@media screen and (min-width: 1158px) {
+  .hero,
+  .benefits,
+  .team,
+  .portfolio {
+    padding: 120px 0;
+  }
+}
