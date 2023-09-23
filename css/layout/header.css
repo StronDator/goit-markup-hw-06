@@ -77,7 +77,6 @@
   .page-navigation {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
     max-width: 526px;
   }
@@ -96,6 +95,7 @@
   .contacts-list-link {
     color: var(--accent-gray);
     letter-spacing: 0.02em;
+    font-weight: 500;
   }
 
   .menu-link {
@@ -115,7 +115,6 @@
   .studio-link {
     /* Positioning */
     position: relative;
-    color: var(--pressed);
   }
 
   .studio-link:hover::after,

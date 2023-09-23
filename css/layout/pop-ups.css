@@ -108,6 +108,15 @@
   margin-bottom: 4px;
   display: block;
   width: 100%;
+
+  /* Typography */
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17em;
+  letter-spacing: 0.04em;
+
+  /* Visual */
+  color: var(--bg-lightslate);
 }
 
 .review-form-input-wrapper {
@@ -226,9 +235,20 @@
   padding: 16px 32px;
   margin: 0 auto;
 
+  /* Typography */
+  color: var(--bg-text-secondary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
   /* Visual */
+  background-color: var(--element-primary);
   border-radius: 4px;
   border: none;
+
+  /* Transition */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-submit:hover,
@@ -244,6 +264,16 @@
   display: flex;
   align-items: center;
   margin-bottom: 24px;
+}
+
+.review-form-checkbox-label {
+  /* Typography */
+  font-size: 12px;
+  line-height: 1.17em;
+  letter-spacing: 0.04em;
+
+  /* Visual */
+  color: var(--bg-lightslate);
 }
 
 .review-form-own-checkbox {
@@ -285,18 +315,6 @@
 
 .review-form-privacy-link {
   color: var(--element-primary);
-}
-
-@media screen and (max-width: 767px) {
-  .user-privacy {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .review-form-own-checkbox {
-    margin-right: unset;
-  }
 }
 
 @media screen and (min-width: 320px) {
@@ -371,17 +389,9 @@
   pointer-events: auto;
 }
 
-.mobile-menu .close-btn {
-  background-color: transparent;
-}
-
 .mobile-menu-item:not(:last-child) {
   display: block;
   margin-bottom: 40px;
-}
-
-.mobile-menu-link {
-  color: var(--pressed);
 }
 
 .mobile-contacts-menu {
@@ -391,13 +401,24 @@
   margin-top: auto;
 }
 
-.contacts-item:not(:last-child) {
-  margin-bottom: 24px;
-}
-
-.contacts-list-link {
+.mobile-contacts-list-link {
+  color: var(--text-primary);
   font-size: 20px;
   font-style: normal;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: 0.4px;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-contacts-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .mobile-menu-link:focus,
+  .mobile-menu-link:active {
+    color: var(--pressed);
+  }
 }
 
 .mobile-contacts-menu .social-list {

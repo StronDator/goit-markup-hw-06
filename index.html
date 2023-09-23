@@ -272,7 +272,7 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                srcset="/images/photo/Camila@2x.jpg 2x"
+                srcset="./images/photo/Camila@2x.jpg 2x"
                 src="./images/photo/Camila.jpg"
                 alt="photo Camilla Garcia"
                 width="264"
@@ -336,7 +336,7 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                srcset="/images/photo/Daniel@2x.jpg 2x"
+                srcset="./images/photo/Daniel@2x.jpg 2x"
                 src="./images/photo/Daniel.jpg"
                 alt="photo Daniel Wilson"
                 width="264"
@@ -671,7 +671,7 @@
       </div>
     </footer>
     <!-- BACKDROP WITH MODAL WINDOW -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="close-btn" type="button">
           <svg
@@ -797,9 +797,9 @@
 
     <!-- MOBILE MENU -->
     <div class="mobile-menu">
-      <button class="close-btn">
+      <button class="close-btn" type="button">
         <svg
-          class="mobile-menu-close-icon"
+          class="close-btn-icon"
           width="8"
           height="8"
           aria-label="mobile menu close icon"
@@ -807,40 +807,34 @@
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <nav c>
-        <ul class="menu list">
+      <nav>
+        <ul class="mobile-menu-list list">
           <li class="mobile-menu-item">
-            <a
-              class="section-title mobile-menu-link mobile-studio-link link"
-              href="./index.html"
+            <a class="section-title mobile-menu-link link" href="./index.html"
               >Studio</a
             >
           </li>
           <li class="mobile-menu-item">
-            <a class="section-title mobile-menu-link mobile-studio-link" href=""
-              >Portfolio</a
-            >
+            <a class="section-title mobile-menu-link link" href="">Portfolio</a>
           </li>
           <li class="mobile-menu-item">
-            <a class="section-title mobile-menu-link mobile-studio-link" href=""
-              >Contacts</a
-            >
+            <a class="section-title mobile-menu-link link" href="">Contacts</a>
           </li>
         </ul>
       </nav>
       <div class="mobile-contacts-menu">
         <address class="mobile-contact">
-          <ul class="contacts-list list">
-            <li class="contacts-item">
+          <ul class="mobile-contacts-list list">
+            <li class="mobile-contacts-item">
               <a
-                class="contacts-list-link mobile-menu-link link"
+                class="mobile-contacts-list-link mobile-menu-link link"
                 href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="contacts-item">
+            <li class="mobile-contacts-item">
               <a
-                class="contacts-list-link mobile-menu-link link"
+                class="mobile-contacts-list-link mobile-menu-link link"
                 href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
