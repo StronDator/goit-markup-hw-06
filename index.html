@@ -31,15 +31,23 @@
               >
             </li>
             <li class="menu-item">
-              <a class="menu-link studio-link link" href="">Portfolio</a>
+              <a class="menu-link studio-link link" href="#our-portfolio"
+                >Portfolio</a
+              >
             </li>
             <li class="menu-item">
-              <a class="menu-link studio-link link" href="">Contacts</a>
+              <a class="menu-link studio-link link" href="#contacts"
+                >Contacts</a
+              >
             </li>
           </ul>
         </nav>
         <div class="open-mobile-menu">
-          <button class="open-mobile-menu-btn" type="button">
+          <button
+            class="open-mobile-menu-btn"
+            type="button"
+            open-mobile-menu-form="modal-2"
+          >
             <svg
               class="open-mobile-menu-icon"
               width="24"
@@ -74,7 +82,13 @@
       <section class="hero">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="order-service-btn" type="button">Order Service</button>
+          <button
+            class="order-service-btn"
+            type="button"
+            open-order-modal-form="modal-1"
+          >
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -404,7 +418,7 @@
       <!-- OUR PORTFOLIO SECTION -->
       <section class="portfolio">
         <div class="container">
-          <h2 class="section-title">Our Portfolio</h2>
+          <h2 class="section-title" id="our-portfolio">Our Portfolio</h2>
           <ul class="portfolio-list list">
             <li class="portfolio-list-item">
               <div class="portfolio-img">
@@ -582,7 +596,7 @@
     <!-- PAGE FOOTER-->
     <footer class="footer-back">
       <div class="footer-container container">
-        <div class="logo-footer-container">
+        <div class="logo-footer-container" id="contacts">
           <a class="footer-logotype link" href="./index.html">
             Web<span class="footer-logo-text">Studio</span></a
           >
@@ -671,9 +685,13 @@
       </div>
     </footer>
     <!-- BACKDROP WITH MODAL WINDOW -->
-    <div class="backdrop">
+    <div class="backdrop" order-modal-form="modal-1">
       <div class="modal">
-        <button class="close-btn" type="button">
+        <button
+          class="close-btn"
+          type="button"
+          close-order-modal-form="modal-1"
+        >
           <svg
             class="close-btn-icon"
             width="8"
@@ -796,8 +814,8 @@
     </div>
 
     <!-- MOBILE MENU -->
-    <div class="mobile-menu">
-      <button class="close-btn" type="button">
+    <div class="mobile-menu" mobile-menu-form="modal-2">
+      <button class="close-btn" type="button" close-mobile-menu-form="modal-2">
         <svg
           class="close-btn-icon"
           width="8"
@@ -815,10 +833,14 @@
             >
           </li>
           <li class="mobile-menu-item">
-            <a class="section-title mobile-menu-link link" href="">Portfolio</a>
+            <a class="section-title mobile-menu-link link" href="#our-portfolio"
+              >Portfolio</a
+            >
           </li>
           <li class="mobile-menu-item">
-            <a class="section-title mobile-menu-link link" href="">Contacts</a>
+            <a class="section-title mobile-menu-link link" href="#contacts"
+              >Contacts</a
+            >
           </li>
         </ul>
       </nav>
@@ -893,5 +915,6 @@
         </ul>
       </div>
     </div>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>
