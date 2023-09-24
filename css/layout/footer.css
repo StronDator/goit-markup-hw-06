@@ -113,10 +113,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .footer-container {
-    margin-bottom: 72px;
-  }
-
   .marketing-message {
     margin-bottom: 72px;
   }
